@@ -8,3 +8,7 @@ export const loginValidation = Yup.object().shape({
     .min(6, "Password must be at least 6 characters")
     .required("Password is required"),
 });
+
+export const selectInputValidation = Yup.object().shape({
+  selectedInput: Yup.number().required("Please select the time"),
+});
